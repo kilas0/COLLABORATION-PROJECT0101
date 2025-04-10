@@ -1415,6 +1415,9 @@ text-align: center;
     font-weight: 400;
     line-height: 24px;
   }
+  .right-side{
+    margin-left: 2rem;
+  }
 }
 .service{
   display: grid;
@@ -1468,6 +1471,80 @@ background-color: #f8f8f8;
   .service-one{
     width: 100%;
     height: 30vh;
+  }
+}
+.Text{
+  text-align: center;
+line-height: 3rem;
+
+}
+.Text p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #444;
+}
+.Text h1{
+  text-transform: uppercase;
+}
+.Text span{
+  position: relative;
+    top: 2rem;
+    color: 
+    color-mix(in srgb, #5f687b, transparent 93%);
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 52px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.about{
+  max-width: 1140px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3rem;
+ 
+}
+.AboutContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 4rem;
+}
+.right-side img{
+  width: 500px;
+ 
+}
+.left h1{
+font-size: 28px;
+line-height: 34px;
+font-weight: 700;
+color: #5f687b;
+}
+.left p{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #707070;
+}
+.double-chech p{
+
+margin: 1rem;
+
+}
+.double-chech i{
+  color: #10bc69;
+}
+@media(max-width:760px){
+  .AboutContainer{
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  }
+  .left{
+    margin-left: 4rem;
   }
 }
 
