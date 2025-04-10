@@ -1548,4 +1548,109 @@ margin: 1rem;
   }
 }
 
+.Counternumber{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin-top: 3rem;
+  max-width: 1140px;
+  margin-inline: auto;
+  text-align: center;
+}
+.num{
+  color: #10bc69;
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+.text{
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #444;
+}
+@media(max-width:760px){
+  .Counternumber{
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}
+.mainservice{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+  max-width: 1140px;
+  margin-inline: auto;
 
+
+}
+
+.ServiceContainers{
+  background-color: #ffffff; 
+  text-align: center;
+  border: 1px solid 
+color-mix(in srgb, #444444, transparent 85%);
+  padding: 19px 30px;
+  transition: border ease-in-out 0.3s;
+  height: 100%;
+  margin-top: 2.5rem;
+} 
+
+.icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+ margin: 1rem;
+}
+.mainservice p{
+  margin: 2rem;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #707070;
+  display: inline;
+ 
+}
+.icons h3{
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.icons h3:hover{
+  color:#10bc10 ;
+}
+.icons i{
+  background-color: #10bc10;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 52px;
+  color: white;
+  border-radius: 5px;
+}
+.ServiceContainers:hover{
+  border: 1px solid #10bc10;
+}
+
+.mainbackground{
+  background-color: #f9f9f9;
+ height: 150vh;
+ margin-top: 3rem;
+ width: 100vw;
+}
+
+@media(max-width:760px){
+  .mainservice{
+    grid-template-columns: 1fr;
+  }
+  .mainbackground{
+    width: 100vw;
+  }
+  .Portfolio{
+    margin-top: 43rem;
+  }
+}
