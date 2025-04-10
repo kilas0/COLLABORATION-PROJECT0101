@@ -19,6 +19,7 @@
 
     background-color: transparent;
     padding: 13px;
+    z-index: 11111;
   }
 
   .Scrol-menu {
@@ -27,6 +28,7 @@
     color: #5f685f;
     box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
     position: fixed;
+    top: 0;
     width: 100%;
 }
   .navbar {
@@ -165,6 +167,7 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   
 }
 
 .h2 {
@@ -275,8 +278,9 @@
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.3s ease, transform 0.3s ease;
-  height: 0;
+  height:0;
   overflow: hidden;
+
 }
 
 .product-card:hover .info {
@@ -1311,3 +1315,150 @@
       padding-left: 2rem;
     }
   }
+
+  .hero{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+    max-width: 1140px;
+    margin-inline: auto;
+  }
+  .right-side{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+  }
+  .right-side h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #5f687b;
+    line-height: 3.5rem;
+  }
+.right-side p{
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  font-weight: 400;
+  color: #aaaaaa;
+}
+  .leftside img{
+   width: 500px;
+  
+  }
+  .leftside{
+    margin-top: 3rem;
+  }
+
+  .btnhero{
+    padding: 9px 20px;
+    border-radius: 50px;
+    border: none;
+  margin-top: 2rem;
+  background-color: #10bc10;
+  color: white;
+  }
+.youtube-btn{
+  font-size: 16px;
+  margin-left: 25px;
+  color: #444444;
+  font-weight: 600;
+  margin-top: 3rem;
+
+}
+
+
+.youtube-btn i{
+  color: #10bc69;
+  font-size: 32px;
+  line-height: 2px;
+  margin-right: 10px;
+  
+  
+}
+
+.btns a{
+  text-decoration: none;
+text-align: center;
+
+}
+.btns a:hover{
+  color: #10bc10;
+}
+.leftside .animated{
+ 
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@media(max-width:760px){
+  .hero{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .right-side h1{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+  .right-side p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+.service{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+  max-width: 1140px;
+  margin-inline: auto;
+}
+.service-one{
+background-color: #f8f8f8;
+  padding: 20px 30px;
+  transition: all ease-in-out 0.4s;
+  height: 40vh;
+  width: 100%;
+}
+.service-one h4{
+  line-height: 24px;
+  margin-top: 15px;
+  font-size: 20px;
+  padding: 8px;
+  color: #555;
+  font-weight: 700;
+ 
+}
+.service-one h4:hover{
+  color: #10bc10;
+
+}
+.service-one p{
+  line-height: 24px;
+  font-size: 14px; 
+  padding: 8px;
+ 
+}
+.service-one i{
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: #10bc10;
+}
+.service-one:hover{
+  transform: translateY(-10px);
+}
+
+
+
+
