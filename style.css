@@ -168,6 +168,7 @@
    justify-content: center;
    align-items: center;
    
+   
 }
 
 .h2 {
@@ -361,6 +362,7 @@
     display: block;
     grid-area: stack;
 }
+
 
 .Team {
 
@@ -1415,8 +1417,12 @@ text-align: center;
     font-weight: 400;
     line-height: 24px;
   }
-  .right-side{
+  .right-side {
     margin-left: 2rem;
+  }
+  .service-one{
+  margin-left: 2rem;
+
   }
 }
 .service{
@@ -1476,6 +1482,7 @@ background-color: #f8f8f8;
 .Text{
   text-align: center;
 line-height: 3rem;
+margin-left: 2rem;
 
 }
 .Text p{
@@ -1507,6 +1514,7 @@ line-height: 3rem;
   justify-content: center;
   flex-direction: column;
   margin-top: 3rem;
+  
  
 }
 .AboutContainer{
@@ -1542,6 +1550,7 @@ margin: 1rem;
   .AboutContainer{
   grid-template-columns: 1fr;
   gap: 2rem;
+  margin-left: 2rem;
   }
   .left{
     margin-left: 4rem;
@@ -1596,7 +1605,7 @@ color-mix(in srgb, #444444, transparent 85%);
   margin-top: 2.5rem;
 } 
 
-.icons{
+.iconss{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1614,16 +1623,16 @@ color-mix(in srgb, #444444, transparent 85%);
   display: inline;
  
 }
-.icons h3{
+.iconss h3{
   font-size: 15px;
   font-weight: 700;
   line-height: 24px;
 }
 
-.icons h3:hover{
+.iconss h3:hover{
   color:#10bc10 ;
 }
-.icons i{
+.iconss i{
   background-color: #10bc10;
   width: 50px;
   height: 50px;
@@ -1646,11 +1655,13 @@ color-mix(in srgb, #444444, transparent 85%);
 @media(max-width:760px){
   .mainservice{
     grid-template-columns: 1fr;
+    margin-left: 2.5rem;
+    
   }
   .mainbackground{
     width: 100vw;
   }
   .Portfolio{
-    margin-top: 43rem;
+    margin-top: 60rem;
   }
 }
