@@ -24,3 +24,5 @@ displayvalues.forEach(element => {
     }
   }, duration);
 });
+
+
