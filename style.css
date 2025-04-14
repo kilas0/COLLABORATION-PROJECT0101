@@ -1788,3 +1788,150 @@ color-mix(in srgb, #444444, transparent 85%);
 
 
 
+
+@media(max-width:760px){
+  .slider{
+    grid-template-columns: 1fr;
+    
+
+  }
+
+  .maintest{
+    height: 40vh;
+  }
+
+  .testomolgy {
+text-align: center;
+  }
+}
+
+.callToaction{
+  background-color: #10bb68;
+  width: 100%;
+  height: 45vh;
+  margin-top: 4rem;
+
+}
+
+.posts{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 1140px;
+  margin-inline: auto;
+  align-items: center;
+  width:90%;
+  position: relative;
+  top: 5rem;
+
+}
+.posts h1{
+  font-size: 28px;
+  line-height: 37px;
+  font-weight: 700;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+}
+.posts p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+}
+.btnAction{
+  padding: 15px 35px;
+  background-color: #10bb68;
+color: white;
+border: 1px solid white;
+border-radius: 50px;
+margin-top: 2rem;
+font-size: 16px;
+font-family: "Raleway", sans-serif;
+font-weight: 500;
+line-height: 24px;
+}
+.btnAction:hover {
+  background: color-mix(in srgb, #10bc69 90%, white 15%);
+  transition: transform 0.5s ease;
+  transform: scale(1.03);
+}
+@media(max-width:760px){
+  .callToaction{
+    width: 120vw;
+
+  }
+}
+
+
+@keyframes smoothSlideFadeFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px) scale(1);
+    filter: blur(4px);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translateY(20px) scale(1.02);
+    filter: blur(2px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+.serviceanimation {
+  opacity: 0;
+  transform: translateY(-80px);
+  will-change: transform, opacity, filter;
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.serviceanimation.visible {
+  animation: smoothSlideFadeFromTop 1.2s  forwards;
+}
+
+.footer-bottom strong{
+  color: #10bc10;
+}
+
+
+
+
+
+#preloader.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  overflow: hidden;
+  background:white;
+  transition: all 0.6s ease-out;
+}
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #ffffff;
+  border-color: #10bc69 transparent #10bb68 transparent;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1.5s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

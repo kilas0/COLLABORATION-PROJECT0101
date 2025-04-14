@@ -59,3 +59,32 @@ dots.forEach((dot, i) => {
 setInterval(nextSlide, 3000); 
 
 showSlide(currentIndex);
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target); 
+    }
+  });
+}, {
+  threshold: 0.3
+});
+
+
+document.querySelectorAll('.serviceanimation').forEach(el => {
+  observer.observe(el);
+});
+
+
+
+window.addEventListener('load', () => {
+  const preloader = document.getElementById('preloader');
+  preloader.classList.add('hidden');
+
+
+  setTimeout(() => {
+    preloader.style.display = 'none';
+  }, 500); 
+});
+
